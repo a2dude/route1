@@ -1,0 +1,44 @@
+<div class="container">
+
+      <form class="form-signin" #Form="ngForm">
+        <h2 class="form-signin-heading">Please log in</h2>
+        
+        <div class="form-group">
+            <label for="userId" class="sr-only">UserId or Email address</label>
+            <input type="email" id="userId" class="form-control" placeholder="Email address" required autofocus
+                ngControl="userId" #fUserId="ngForm"
+                [(ngModel)]="userId">
+                <span [hidden]="fUserId.valid || fUserId.pristine" class="alert alert-warning">
+                Name is required
+                </span>  
+                      
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" class="form-control" placeholder="Password" required
+                ngControl="password" #fPassword="ngForm"
+                [(ngModel)]="password">
+            
+            <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"
+                    ngControl="rememberMe" #spy3
+                    [(ngModel)]="rememberMe"> Remember me
+             </label>
+            </div>
+    
+            <button class="btn btn-lg btn-primary btn-block" type="submit" 
+                [disabled]="!Form.form.valid || fPassword.pristine"
+                (click)="authenticate()" [routerLink]="['/AuthenticatedHome']">Log in (Link)</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" 
+                [disabled]="!Form.form.valid || fPassword.pristine"
+                (click)="loginCode()">Log in (Code)</button>
+        </div>
+      </form>
+      
+      <form class="form-signin">  
+        <div class="form-group">
+            <button class="btn btn-lg btn-block" [routerLink]="['/AnonymousHome']">Cancel (Link)</button>
+            <button class="btn btn-lg btn-block" (click)="cancel()">Cancel (Code)</button>
+        </div>
+      </form>
+      
+</div>
