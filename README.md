@@ -37,27 +37,27 @@ However the following code this._router.navigate(['/AuthenticatedHome']); while 
 
 DEPRECATION WARNING: 'enqueueTask' is no longer supported and will be removed in next major release. Use addTask/addRepeatingTask/addMicroTask
 DEPRECATION WARNING: 'dequeueTask' is no longer supported and will be removed in next major release. Use removeTask/removeRepeatingTask/removeMicroTask
->>>> App OnInit
->>>> MenuPanel OnInit
+     App OnInit
+     MenuPanel OnInit
 Angular 2 is running in the development mode. Call enableProdMode() to enable the production mode.
->>>> AnonymousHomePanel OnInit
+     AnonymousHomePanel OnInit
 Uncaught (in promise) TypeError: object is not a constructor(…)
->>>> Route Change: 
->>>> AnonymousHomePanel OnDestroy
->>>> LoginPanel OnInit
->>>> Route Change: login
->>>> LoginPanel OnDestroy
->>>> AuthenticatedHomePanel OnInit
->>>> Route Change: home
+     Route Change: 
+     AnonymousHomePanel OnDestroy
+     LoginPanel OnInit
+     Route Change: login
+     LoginPanel OnDestroy
+     AuthenticatedHomePanel OnInit
+     Route Change: home
 Navigated to http://localhost:8080/?
 Uncaught (in promise) TypeError: object is not a constructor(…)
 DEPRECATION WARNING: 'enqueueTask' is no longer supported and will be removed in next major release. Use addTask/addRepeatingTask/addMicroTask
 DEPRECATION WARNING: 'dequeueTask' is no longer supported and will be removed in next major release. Use removeTask/removeRepeatingTask/removeMicroTask
->>>> App OnInit
->>>> MenuPanel OnInit
+     App OnInit
+     MenuPanel OnInit
 Angular 2 is running in the development mode. Call enableProdMode() to enable the production mode.
->>>> AuthenticatedHomePanel OnInit
->>>> Route Change: home
+     AuthenticatedHomePanel OnInit
+     Route Change: home
 
 
 ## Log - Edge
@@ -70,39 +70,39 @@ DEPRECATION WARNING: 'enqueueTask' is no longer supported and will be removed in
 angular2-polyfills.js (1152,10)
 DEPRECATION WARNING: 'dequeueTask' is no longer supported and will be removed in next major release. Use removeTask/removeRepeatingTask/removeMicroTask
 angular2-polyfills.js (1152,10)
->>>> App OnInit
+     App OnInit
 route1.js (268,21)
->>>> MenuPanel OnInit
+     MenuPanel OnInit
 route1.js (81,21)
 Angular 2 is running in the development mode. Call enableProdMode() to enable the production mode.
 angular2.dev.js (353,5)
->>>> AnonymousHomePanel OnInit
+     AnonymousHomePanel OnInit
 route1.js (125,21)
->>>> Route Change: 
+     Route Change: 
 route1.js (270,25)
->>>> AnonymousHomePanel OnDestroy
+     AnonymousHomePanel OnDestroy
 route1.js (128,21)
->>>> LoginPanel OnInit
+     LoginPanel OnInit
 route1.js (200,21)
->>>> Route Change: login
+     Route Change: login
 route1.js (270,25)
->>>> LoginPanel OnDestroy
+     LoginPanel OnDestroy
 route1.js (203,21)
->>>> AuthenticatedHomePanel OnInit
+     AuthenticatedHomePanel OnInit
 route1.js (159,21)
->>>> Route Change: home
+     Route Change: home
 route1.js (270,25)
->>>> AuthenticatedHomePanel OnDestroy
+     AuthenticatedHomePanel OnDestroy
 route1.js (162,21)
->>>> LoginPanel OnInit
+     LoginPanel OnInit
 route1.js (200,21)
->>>> Route Change: login
+     Route Change: login
 route1.js (270,25)
->>>> Route Change: login
+     Route Change: login
 route1.js (270,25)
->>>> LoginPanel OnDestroy
+     LoginPanel OnDestroy
 route1.js (203,21)
->>>> AuthenticatedHomePanel OnInit
+     AuthenticatedHomePanel OnInit
 route1.js (159,21)
 EXCEPTION: Attempt to use a dehydrated detector: LoginPanel_0 -> ngSubmit
    EXCEPTION: Attempt to use a dehydrated detector: LoginPanel_0 -> ngSubmit
@@ -143,7 +143,7 @@ Error
 
 SCRIPT5022: Attempt to use a dehydrated detector: LoginPanel_0 -> ngSubmit
 angular2.dev.js (1281,9)
->>>> Route Change: home
+     Route Change: home
 route1.js (270,25)
 
 
