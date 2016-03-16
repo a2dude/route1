@@ -75,7 +75,7 @@ System.register("panels/menu/menuPanel", ['angular2/core', 'angular2/router', "s
             MenuPanel = (function () {
                 function MenuPanel(_authenticationService) {
                     this._authenticationService = _authenticationService;
-                    this.appVer = 4;
+                    this.appVer = 3;
                 }
                 MenuPanel.prototype.ngOnInit = function () {
                     console.log(">>>> MenuPanel OnInit");

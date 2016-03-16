@@ -27,7 +27,7 @@ export class MenuPanel
         implements OnInit,
                    OnDestroy {
                        
-    appVer: number = 4;                       
+    appVer: number = 3;                       
     
     constructor(protected _authenticationService: AuthenticationService) {
     } 
