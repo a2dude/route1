@@ -30,7 +30,7 @@ However the following code this._router.navigate(['/AuthenticatedHome']); while 
 
 6. click on Login and input user email and password
 
-7. select Login (Code) observe the app being reloaded
+7. select Login (Code) observe the app being reloaded.  Note the log entry once the expected behaviour of switching to the expected panel is completed: "Navigated to http://localhost:8080/?", at this point the app reloads.
 
 
 ## Log - Chrome
